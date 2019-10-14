@@ -7,12 +7,12 @@
     'summary': """
 		This module allows to add extra price to the variant additional to attribute price.
         """,
-    'version': '12.0.1.0.0',
+    'version': '13.0.1.0.0',
     'category': 'Warehouse',
     'website': "http://sodexis.com/",
     'author': "Sodexis, Inc <dev@sodexis.com>",
     'license': 'OPL-1',
-    'installable': True,
+    'installable': False,
     'application': False,
     'depends': [
                 'product',
