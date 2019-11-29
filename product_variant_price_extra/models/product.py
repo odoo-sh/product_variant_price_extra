@@ -3,14 +3,12 @@
 # License OPL-1 (See LICENSE file for full copyright and licensing details).
 
 from odoo import models, fields, api
-from odoo.addons import decimal_precision as dp
 
 
 class Product(models.Model):
     _inherit = 'product.product'
-#
 
-    variant_price_extra = fields.Float('Variant Extra Price' , digits=dp.get_precision('Product Price'),
+    variant_price_extra = fields.Float('Variant Extra Price', digits='Product Price',
          help="Extra price of the variant additional to attribute prices.")
 
     @api.depends('list_price', 'price_extra', 'variant_price_extra')

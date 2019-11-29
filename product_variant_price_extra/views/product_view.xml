@@ -3,24 +3,26 @@
 <!-- (c) 2019 Sodexis License OPL-1 or later (http://www.gnu.org/licenses/agpl.html). -->
 
 <odoo>
-	<record id="product_normal_form_view" model="ir.ui.view">
-		<field name="name">product.product</field>
-		<field name="model">product.product</field>
-		<field name="inherit_id" ref="product.product_normal_form_view" />
-		<field name="arch" type="xml">
-			<xpath expr="//field[@name='lst_price']" position="after">
-				<field name="variant_price_extra" />
-			</xpath>
-		</field>
-	</record>
-	<record id="product_variant_easy_edit_view" model="ir.ui.view">
-		<field name="name">product.product.view.form.easy</field>
-		<field name="model">product.product</field>
-		<field name="inherit_id" ref="product.product_variant_easy_edit_view" />
-		<field name="arch" type="xml">
-			<xpath expr="//field[@name='lst_price']" position="after">
-				<field name="variant_price_extra" />
-			</xpath>
-		</field>
-	</record>
+    <record id="product_normal_form_view" model="ir.ui.view">
+        <field name="name">product.product</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='pricing']" position="after">
+                <field name="variant_price_extra"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_variant_easy_edit_view" model="ir.ui.view">
+        <field name="name">product.product.view.form.easy</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_variant_easy_edit_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[contains(@class, 'o_row col-5 pl-0')]" position="after">
+                <field name="variant_price_extra" />
+            </xpath>
+        </field>
+    </record>
+
 </odoo>
