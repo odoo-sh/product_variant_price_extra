@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Copyright 2019 Sodexis
 # License OPL-1 (See LICENSE file for full copyright and licensing details).
 
@@ -7,7 +6,7 @@
     'summary': """
         This module allows to add extra price to the variant additional to attribute price.
         """,
-    'version': '13.0.1.0.0',
+    'version': "14.0.1.0.0",
     'category': 'Warehouse',
     'website': "http://sodexis.com/",
     'author': "Sodexis",
@@ -16,5 +15,5 @@
     'data': [
         'views/product_view.xml',
     ],
-    'installable': True,
+    'installable': False,
 }
