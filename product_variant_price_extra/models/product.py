@@ -12,5 +12,5 @@ class Product(models.Model):
 
     def _compute_product_price_extra(self):
         super(Product, self)._compute_product_price_extra()
-        for product in self:
+        for product in self.filtered(lambda x:x.variant_price_extra):
             product.price_extra = sum(product.product_template_attribute_value_ids.mapped('price_extra')) + product.variant_price_extra
