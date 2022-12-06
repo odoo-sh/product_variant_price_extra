@@ -6,7 +6,7 @@
     'summary': """
         This module allows to add extra price to the variant additional to attribute price.
         """,
-    'version': "14.0.1.0.0",
+    'version': "15.0.1.0.0",
     'category': 'Warehouse',
     'website': "http://sodexis.com/",
     'author': "Sodexis",
