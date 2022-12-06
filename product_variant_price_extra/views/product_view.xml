@@ -1,6 +1,6 @@
 <?xml version ="1.0" encoding="utf-8"?>
 
-<!-- (c) 2019 Sodexis License OPL-1 or later (http://www.gnu.org/licenses/agpl.html). -->
+<!-- (c) 2019-2022 Sodexis License OPL-1 or later (http://www.gnu.org/licenses/agpl.html). -->
 
 <odoo>
     <record id="product_normal_form_view" model="ir.ui.view">

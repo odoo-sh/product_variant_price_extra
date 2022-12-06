@@ -1,4 +1,4 @@
-# Copyright 2019 Sodexis
+# Copyright 2019-2022 Sodexis
 # License OPL-1 (See LICENSE file for full copyright and licensing details).
 
 {
@@ -15,5 +15,5 @@
     'data': [
         'views/product_view.xml',
     ],
-    'installable': False,
+    'installable': True,
 }
