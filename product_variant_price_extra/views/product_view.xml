@@ -19,7 +19,7 @@
         <field name="model">product.product</field>
         <field name="inherit_id" ref="product.product_variant_easy_edit_view" />
         <field name="arch" type="xml">
-            <xpath expr="//div[contains(@class, 'o_row col-5 pl-0')]" position="after">
+            <xpath expr="//div[hasclass('col-5')]" position="after">
                 <field name="variant_price_extra" />
             </xpath>
         </field>
