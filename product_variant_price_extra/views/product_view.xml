@@ -11,6 +11,9 @@
             <xpath expr="//div[@name='pricing']" position="after">
                 <field name="variant_price_extra"/>
             </xpath>
+            <xpath expr="//label[@for='list_price']" position="replace">
+                <label for="lst_price" string="Sales Price (with Extra Price)"/>
+            </xpath>
         </field>
     </record>
 
@@ -21,6 +24,9 @@
         <field name="arch" type="xml">
             <xpath expr="//div[hasclass('col-5')]" position="after">
                 <field name="variant_price_extra" />
+            </xpath>
+            <xpath expr="//label[@for='lst_price']" position="replace">
+                <label for="lst_price" string="Sales Price (with Extra Price)"/>
             </xpath>
         </field>
     </record>

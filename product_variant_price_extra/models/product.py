@@ -9,6 +9,7 @@ class Product(models.Model):
 
     variant_price_extra = fields.Float('Variant Extra Price', digits='Product Price',
          help="Extra price of the variant additional to attribute prices.")
+    lst_price = fields.Float(help="Sales Price = Template Sales Price + Variant Extra Price")
 
     def _compute_product_price_extra(self):
         super(Product, self)._compute_product_price_extra()
